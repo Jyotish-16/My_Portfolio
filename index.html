@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jyotish Rakoti — Software Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Jyotish Rakoti — Computer Science Engineering student, Full Stack Developer, and AI/ML Enthusiast." />
+  <meta name="keywords" content="Jyotish Rakoti, portfolio, developer, full stack, AI, ML, CSE, IIIT Sri City" />
+  <meta name="author" content="Jyotish Rakoti" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Jyotish Rakoti — Portfolio" />
+  <meta property="og:description" content="Computer Science Engineering Student | Full Stack Developer | AI/ML Enthusiast" />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon (emoji fallback) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Background Orbs -->
+  <div class="bg-orb bg-orb--1"></div>
+  <div class="bg-orb bg-orb--2"></div>
+  <div class="bg-orb bg-orb--3"></div>
+
+  <!-- ==================== Navbar ==================== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#hero" class="nav-logo">&lt;JR /&gt;</a>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ==================== Hero ==================== -->
+  <section class="hero section" id="hero">
+    <div class="container">
+      <div class="hero-content">
+        <p class="hero-greeting">👋 Hello, I'm</p>
+        <h1 class="hero-name">Jyotish <span class="highlight">Rakoti</span></h1>
+        <p class="hero-title"><span id="typed-text"></span><span class="typed-cursor">|</span></p>
+        <p class="hero-description">Passionate about building scalable web applications, solving real-world problems, and exploring Artificial Intelligence &amp; modern software engineering practices.</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">⬡ View Projects</a>
+          <a href="#contact" class="btn btn-outline">✉ Contact Me</a>
+          <a href="resume.pdf" download class="btn btn-outline">📄 Download Resume</a>
+          <button class="btn btn-outline" id="view-resume-btn" onclick="document.getElementById('resume-modal').classList.add('active'); document.body.style.overflow='hidden';">👁️ View Resume</button>
+        </div>
+      </div>
+      <div class="hero-avatar">
+        <div class="avatar-inner">JR</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== About ==================== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>About Me</h2>
+        <p>A glimpse into who I am and what drives me.</p>
+        <div class="section-divider"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>I'm a <strong>B.Tech Computer Science &amp; Engineering</strong> student at <strong>IIIT Sri City</strong>, driven by curiosity and a relentless desire to build impactful software.</p>
+          <p>My primary interests lie in <strong>Full Stack Development</strong> and <strong>AI/ML</strong>. I enjoy designing end-to-end solutions — from crafting responsive front-end interfaces to engineering robust back-end architectures.</p>
+          <p>I have a solid grasp of core CS fundamentals including <strong>Data Structures &amp; Algorithms</strong>, <strong>DBMS</strong>, <strong>Object-Oriented Programming</strong>, <strong>Computer Networks</strong>, and <strong>Operating Systems</strong>, which enables me to approach problems methodically and write efficient, maintainable code.</p>
+          <p>I'm constantly exploring new technologies, contributing to projects, and looking for opportunities to grow as a software engineer.</p>
+        </div>
+        <div class="about-stats reveal">
+          <div class="stat-card">
+            <div class="stat-number">4+</div>
+            <div class="stat-label">Technologies</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">2+</div>
+            <div class="stat-label">Major Projects</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">B.Tech</div>
+            <div class="stat-label">CSE @ IIIT Sri City</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">∞</div>
+            <div class="stat-label">Passion for Code</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== Skills ==================== -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Skills &amp; Technologies</h2>
+        <p>Tools and technologies I work with.</p>
+        <div class="section-divider"></div>
+      </div>
+      <div class="skills-grid">
+        <!-- Programming Languages -->
+        <div class="skill-category reveal">
+          <h3>⌨️ Programming Languages</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">C</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">JavaScript</span>
+          </div>
+        </div>
+        <!-- Frontend & Backend -->
+        <div class="skill-category reveal">
+          <h3>🖥️ Frontend &amp; Backend</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">React.js</span>
+            <span class="skill-tag">NestJS</span>
+          </div>
+        </div>
+        <!-- Database & Tools -->
+        <div class="skill-category reveal">
+          <h3>🛢️ Database &amp; Tools</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">Swagger</span>
+            <span class="skill-tag">VS Code</span>
+          </div>
+        </div>
+        <!-- Core Concepts -->
+        <div class="skill-category reveal">
+          <h3>🧠 Core Concepts</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">DSA</span>
+            <span class="skill-tag">OOP</span>
+            <span class="skill-tag">DBMS</span>
+            <span class="skill-tag">Operating Systems</span>
+            <span class="skill-tag">Computer Networks</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== Projects ==================== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Featured Projects</h2>
+        <p>Projects that showcase my development capabilities.</p>
+        <div class="section-divider"></div>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card reveal">
+          <div class="project-image project-image--globesync"></div>
+          <div class="project-body">
+            <h3>GlobeSync</h3>
+            <p class="project-subtitle">Travel Itinerary &amp; Coordination Platform</p>
+            <p>A full-stack travel management platform with role-based access control, featuring modules for Travelers, Travel Guides, Admins, and Support teams.</p>
+            <ul class="project-features">
+              <li>Custom itinerary planning &amp; guide coordination</li>
+              <li>REST API integration with Swagger docs</li>
+              <li>RBAC implementation using NestJS Guards</li>
+              <li>Frontend integrated with backend APIs</li>
+              <li>UML diagrams &amp; ER diagrams</li>
+              <li>Structured SRS documentation</li>
+            </ul>
+            <div class="project-tech">
+              <span class="tech-badge">React.js</span>
+              <span class="tech-badge">NestJS</span>
+              <span class="tech-badge">MySQL</span>
+              <span class="tech-badge">Swagger</span>
+              <span class="tech-badge">REST API</span>
+              <span class="tech-badge">RBAC</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Jyotish-16" target="_blank" rel="noopener" class="btn btn-primary">⭐ GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-image project-image--travel-ai"></div>
+          <div class="project-body">
+            <h3>Intelligent Travel Recommendation System</h3>
+            <p class="project-subtitle">AI-Powered Destination Recommender</p>
+            <p>An AI-powered travel recommendation system that provides personalized destination suggestions based on user preferences, budget, interests, and travel patterns.</p>
+            <ul class="project-features">
+              <li>Content-based filtering &amp; similarity analysis</li>
+              <li>User preference analysis &amp; profiling</li>
+              <li>Budget-aware destination matching</li>
+              <li>Data preprocessing &amp; feature engineering</li>
+              <li>ML recommendation algorithms</li>
+              <li>Scalable application architecture</li>
+            </ul>
+            <div class="project-tech">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">Pandas</span>
+              <span class="tech-badge">NumPy</span>
+              <span class="tech-badge">Scikit-learn</span>
+              <span class="tech-badge">Machine Learning</span>
+              <span class="tech-badge">Data Science</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Jyotish-16" target="_blank" rel="noopener" class="btn btn-primary">⭐ GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== Education ==================== -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Education</h2>
+        <p>My academic journey so far.</p>
+        <div class="section-divider"></div>
+      </div>
+      <div class="timeline reveal">
+        <div class="timeline-item">
+          <div class="timeline-icon">🎓</div>
+          <div class="timeline-card">
+            <span class="timeline-date">2024 — 2028</span>
+            <h3>IIIT Sri City</h3>
+            <p class="timeline-degree">B.Tech in Computer Science & Engineering</p>
+            <p class="timeline-desc">Building strong fundamentals in algorithms, data structures, AI/ML, and full-stack development while working on real-world projects.</p>
+            <span class="timeline-location">📍 Sri City, Andhra Pradesh</span>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-icon">📘</div>
+          <div class="timeline-card">
+            <span class="timeline-date">Intermediate</span>
+            <h3>Sri Chaitanya Junior College</h3>
+            <p class="timeline-degree">Higher Secondary Education — MPC</p>
+            <p class="timeline-desc">Focused on Mathematics, Physics, and Chemistry with a strong academic track record.</p>
+            <span class="timeline-location">📍 Andhra Pradesh</span>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-icon">📗</div>
+          <div class="timeline-card">
+            <span class="timeline-date">Secondary</span>
+            <h3>Sri Chaitanya School</h3>
+            <p class="timeline-degree">Secondary School Education — SSC</p>
+            <p class="timeline-desc">Developed foundational knowledge and cultivated academic discipline.</p>
+            <span class="timeline-location">📍 Andhra Pradesh</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== Certifications ==================== -->
+  <section class="section" id="certifications">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Certifications</h2>
+        <p>Credentials that validate my skills.</p>
+        <div class="section-divider"></div>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-icon">🏆</div>
+        <div class="cert-info">
+          <h3>The Complete Full-Stack Web Development Bootcamp</h3>
+          <p>Udemy — Comprehensive web development course covering front-end and back-end technologies.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== Contact ==================== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Get In Touch</h2>
+        <p>Have a question or want to work together? Reach out!</p>
+        <div class="section-divider"></div>
+      </div>
+      <div class="contact-grid reveal">
+        <a href="mailto:jyotish.r24@iiits.in" class="contact-card">
+          <div class="contact-icon">📧</div>
+          <h4>Email</h4>
+          <span>jyotish.r24@iiits.in</span>
+        </a>
+        <a href="https://github.com/Jyotish-16" target="_blank" rel="noopener" class="contact-card">
+          <div class="contact-icon">🐙</div>
+          <h4>GitHub</h4>
+          <span>github.com/Jyotish-16</span>
+        </a>
+        <a href="https://linkedin.com/in/jyotish-rakoti" target="_blank" rel="noopener" class="contact-card">
+          <div class="contact-icon">💼</div>
+          <h4>LinkedIn</h4>
+          <span>linkedin.com/in/jyotish-rakoti</span>
+        </a>
+        <a href="https://leetcode.com/u/Jyotish_Rakoti" target="_blank" rel="noopener" class="contact-card">
+          <div class="contact-icon">🧩</div>
+          <h4>LeetCode</h4>
+          <span>leetcode.com/u/Jyotish_Rakoti</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== Footer ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <p>Designed &amp; Developed by <span>Jyotish Rakoti</span> &copy; 2025</p>
+    </div>
+  </footer>
+
+  <!-- Scroll-to-Top Button -->
+  <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">↑</button>
+
+  <!-- ==================== Resume Modal ==================== -->
+  <div class="resume-modal-overlay" id="resume-modal">
+    <div class="resume-modal">
+      <div class="resume-modal-header">
+        <h3>📄 My Resume</h3>
+        <div class="resume-modal-actions">
+          <a href="resume.pdf" download class="btn btn-primary btn-sm">⬇ Download</a>
+          <button class="resume-modal-close" id="resume-modal-close" aria-label="Close resume viewer">&times;</button>
+        </div>
+      </div>
+      <div class="resume-modal-body">
+        <iframe src="resume.pdf" title="Resume - Jyotish Rakoti" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
